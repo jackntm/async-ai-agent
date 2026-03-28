@@ -1,0 +1,21 @@
+# Bỏ qua môi trường ảo (nếu có dùng)
+venv/
+.venv/
+env/
+
+# Bỏ qua các file rác do Python tự sinh ra
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# TUYỆT ĐỐI BỎ QUA FILE BẢO MẬT
+.env
+
+# Bỏ qua rác của hệ điều hành (nếu bạn dùng Mac hoặc Windows)
+.DS_Store
+Thumbs.db
+
+# Bỏ qua rác của các IDE (VS Code, PyCharm)
+.vscode/
+.idea/

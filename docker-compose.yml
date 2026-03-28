@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  ai-agent:
+    build: .
+    container_name: async_ai_agent
+    # Nối cổng 8000 của máy tính với cổng 8000 của container
+    ports:
+      - "8000:8000"
+    # Tự động nạp API Key từ file .env ở máy bạn vào container
+    env_file:
+      - .env
+    # Tự động khởi động lại nếu bị sập (trừ khi bạn tự tắt)
+    restart: unless-stopped

@@ -1,0 +1,17 @@
+async-ai-agent/
+│
+├── data/                   # Nơi chứa các file PDF, text nội bộ để AI đọc (Local source).
+│
+├── src/                    # (Source) Nơi chứa toàn bộ code "não bộ" của dự án.
+│   ├── __init__.py         # File rỗng để Python hiểu 'src' là một module.
+│   ├── models/             # Chứa Pydantic class (Type Hinting) định nghĩa cấu trúc dữ liệu.
+│   ├── fetchers/           # Chứa code AsyncIO đi cào dữ liệu từ Web, Wiki, PDF.
+│   ├── ai/                 # Chứa code kết nối với LLM (OpenAI, Gemini, hoặc model RAG của bạn).
+│   └── utils/              # Chứa các hàm hỗ trợ lặt vặt (đọc file, ghi log...).
+│
+├── main.py                 # File gốc để chạy toàn bộ chương trình (hoặc khởi chạy FastAPI sau này).
+├── requirements.txt        # Danh sách các thư viện cần cài (pydantic, asyncio, httpx...).
+├── Dockerfile              # Bản thiết kế để đóng gói dự án thành Docker container.
+├── .dockerignore           # Chặn Docker copy những file rác (như __pycache__).
+├── .gitignore              # Chặn Git đẩy file rác hoặc data nhạy cảm lên GitHub.
+└── README.md               # Mặt tiền của dự án: Giới thiệu dự án làm gì, cách cài đặt.
