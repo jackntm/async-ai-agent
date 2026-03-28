@@ -21,10 +21,14 @@
 ### 📦 Quick Start with Docker
 
 ```bash
-# Clone và setup
-git clone [https://github.com/HCMUT-student/OOknafy-Agent.git](https://github.com/HCMUT-student/OOknafy-Agent.git)
-cd OOknafy-Agent
+# Clone repository về máy
+git clone [https://github.com/jackntm/async-ai-agent.git](https://github.com/jackntm/async-ai-agent.git)
+
+# Di chuyển vào thư mục dự án
+cd async-ai-agent
+
+# Tạo file biến môi trường và điền API Key của bạn
 echo "GEMINI_API_KEY=your_actual_key" > .env
 
-# Run với Docker
-docker-compose up -d --build
+# Khởi chạy hệ thống bằng Docker
+docker compose up -d --build
